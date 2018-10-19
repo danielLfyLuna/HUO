@@ -1,0 +1,11 @@
+.ant-collapse-header {
+  width: 85%;
+}
+.panelBtn {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+}
+.ant-collapse-item {
+  position: relative;
+}

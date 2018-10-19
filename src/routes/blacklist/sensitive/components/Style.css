@@ -1,0 +1,9 @@
+.ant-tag-checkable {
+  background-color: #77E4FF;
+}
+.ant-tag-checkable-checked {
+  background-color: #FF7755;
+}
+.ant-tag-checkable-checked > div {
+  color: #FFFFFF;
+}
