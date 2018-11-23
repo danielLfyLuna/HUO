@@ -90,7 +90,7 @@ function fetchAuthentics() {
   return (dispatch, getState) => {
 
     dispatch(requestAuthentics())
-    let url = `/huo/products/authentic/ips`
+    let url = '/huo/products/authentic/ips'
     AxiosAPI({
       method: 'GET',
       url: url
@@ -110,7 +110,7 @@ function fetchAuthentics() {
 function addAuthentic(data) {
   return (dispatch, getState) => {
     dispatch(requestAuthenticAdd())
-    let url = `/huo/products/authentic/ips`
+    let url = '/huo/products/authentic/ips'
     AxiosAPI({
       method: 'POST',
       data: data.form,
@@ -131,7 +131,7 @@ function addAuthentic(data) {
 function delAuthentic(data) {
   return (dispatch, getState) => {
     dispatch(requestAuthenticDel())
-    let url = `/huo/products/authentic/ips`
+    let url = '/huo/products/authentic/ips'
     AxiosAPI({
       method: 'DELETE',
       data: data.form,

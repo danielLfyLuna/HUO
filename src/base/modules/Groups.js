@@ -27,7 +27,7 @@ function receiveGroupsMap(data) {
 function fetchGroupsMap() {
   return (dispatch, getState) => {
     dispatch(requestGroupsMap())
-    let url = `/huo/groups/map`
+    let url = '/huo/groups/map'
     AxiosAPI({
       method: 'GET',
       url: url,

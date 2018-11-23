@@ -656,7 +656,7 @@ function fetchRoles() {
   return (dispatch) => {
 
     dispatch(requestRoles())
-    let url = `/userRoles/role`
+    let url = '/userRoles/role'
     AxiosAPI.get(
       url
     ).then(response => {
@@ -676,7 +676,7 @@ function createRole(data) {
   return (dispatch) => {
 
     dispatch(requestRoleAdd())
-    let url = `/userRoles/role`
+    let url = '/userRoles/role'
     AxiosAPI.post(
       url, data.form
     ).then(response => {
@@ -778,7 +778,7 @@ function fetchMenus() {
   return (dispatch) => {
 
     dispatch(requestMenus())
-    let url = `/permissions/menuList`
+    let url = '/permissions/menuList'
     AxiosAPI.get(
       url
     ).then(response => {
@@ -883,7 +883,7 @@ function updateMenuPermit(data) {
   return (dispatch) => {
 
     dispatch(requestMenuPermission())
-    let url = `/permissions/permissions/uri`
+    let url = '/permissions/permissions/uri'
     AxiosAPI.put(
       url, data.form
     ).then(response => {
@@ -904,7 +904,7 @@ function fetchPermissions() {
   return (dispatch) => {
 
     dispatch(requestPermissions())
-    let url = `/permissions/permissionList`
+    let url = '/permissions/permissionList'
     AxiosAPI.get(
       url
     ).then(response => {

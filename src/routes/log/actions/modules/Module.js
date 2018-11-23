@@ -52,7 +52,7 @@ function fetchLogActions(data = {}) {
   return (dispatch, getState) => {
     // 验证从复提交
     dispatch(requestActions())
-    const url = `/huo/logs/actions`
+    const url = '/huo/logs/actions'
     AxiosAPI({
       method: 'GET',
       url: url,
@@ -92,7 +92,7 @@ function exportLogActions(data) {
 
     dispatch(requestActionExpor())
     openNotificationWithIcon('success', '正在导出,请稍后')
-    const url = `/huo/logs/actions/export`
+    const url = '/huo/logs/actions/export'
     AxiosAPI({
       method: 'POST',
       url: url,
@@ -135,7 +135,7 @@ function receiveProduces(data) {
 function fetchOperateType() {
   return async (dispatch, getState) => {
 
-    const url = `/huo/logs/logsource/3`
+    const url = '/huo/logs/logsource/3'
     try {
       const response = await AxiosAPI.get(url)
       dispatch(receiveOperates(response))
@@ -148,7 +148,7 @@ function fetchOperateType() {
 function fetchConsumeSources() {
   return async (dispatch, getState) => {
 
-    const url = `/huo/logs/logsource/2`
+    const url = '/huo/logs/logsource/2'
     try {
       const response = await AxiosAPI.get(url)
       dispatch(receiveConsumes(response))
@@ -161,7 +161,7 @@ function fetchConsumeSources() {
 function fetchProduceSources() {
   return async (dispatch, getState) => {
 
-    const url = `/huo/logs/logsource/1`
+    const url = '/huo/logs/logsource/1'
     try {
       const response = await AxiosAPI.get(url)
       dispatch(receiveProduces(response))

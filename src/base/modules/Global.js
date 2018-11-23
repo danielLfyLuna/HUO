@@ -53,7 +53,7 @@ function fetchGlobalProducts() {
   return async (dispatch, getState) => {
 
     dispatch(requestProducts())
-    const url = `/huo/products/server/options`
+    const url = '/huo/products/server/options'
     try {
       const response = await AxiosAPI.get(url)
       dispatch(receiveProducts(response))
@@ -120,7 +120,7 @@ function fetchGlobalChannels() {
   return (dispatch, getState) => {
 
     dispatch(requestChannels())
-    const url = `/huo/channels`
+    const url = '/huo/channels'
     AxiosAPI({
       method: 'GET',
       url: url,
@@ -154,7 +154,7 @@ function fetchGlobalGroups() {
   return (dispatch, getState) => {
 
     dispatch(requestGroups())
-    const url = `/huo/groups/map`
+    const url = '/huo/groups/map'
     AxiosAPI({
       method: 'GET',
       url: url,

@@ -127,7 +127,7 @@ export function fetchSqls() {
     // 验证从复提交
     dispatch(clearSqls())
     dispatch(requestSqls())
-    const url = `/huo/sqls`
+    const url = '/huo/sqls'
     AxiosAPI({
       method: 'GET',
       url: url,
@@ -150,7 +150,7 @@ export function addSqls(data) {
   return (dispatch, getState) => {
 
     dispatch(requestAddSqls())
-    const url = `/huo/sqls`
+    const url = '/huo/sqls'
     AxiosAPI({
       method: 'POST',
       url: url,
@@ -190,7 +190,7 @@ export function deleteSqls(data) {
 export function updateSqls(data) {
   return (dispatch, getState) => {
 
-    const url = `/huo/sqls`
+    const url = '/huo/sqls'
     AxiosAPI({
       method: 'PUT',
       url: url,

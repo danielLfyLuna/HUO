@@ -3,7 +3,7 @@ import _ from 'lodash'
 let ignore = ['index.js', 'PageNotFound']
 
 let arr = _.pullAll(__GLOB__, ignore)
-
+console.log(__GLOB__)
 _.map(arr, (elem, index) => {
   // 配置后端API地址前缀
   const PREFIX_API = '/admin/api/'

@@ -144,5 +144,5 @@ Versions.propTypes = {
   deleteVersion: PropTypes.func,
   fetchGlobalProducts: PropTypes.func,
   fetchGlobalGroups: PropTypes.func,
-  keepGlobals: PropTypes.func,
+  keepGlobals: PropTypes.func
 }

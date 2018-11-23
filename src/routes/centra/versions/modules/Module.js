@@ -151,7 +151,7 @@ function deleteVersion(data) {
     let url = `/huo/products/${data.path.productId}/versions/${data.path.version}`
     AxiosAPI({
       method: 'DELETE',
-      url: url,
+      url: url
     }).then(response => {
       openNotificationWithIcon('success', '删除成功')
       dispatch(fetchVersions(data))

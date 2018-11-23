@@ -223,5 +223,5 @@ CDKeys.propTypes = {
   fetchGlobalProducts: PropTypes.func,
   fetchGlobalItems: PropTypes.func,
   fetchGlobalGoods: PropTypes.func,
-  fetchGlobalChannels: PropTypes.func,
+  fetchGlobalChannels: PropTypes.func
 }

@@ -204,7 +204,7 @@ function fetchCellsMap() {
   return (dispatch, getState) => {
 
     dispatch(requestCellsMap())
-    const url = `/huo/products/cells`
+    const url = '/huo/products/cells'
     AxiosAPI({
       method: 'GET',
       url: url,

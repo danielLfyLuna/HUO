@@ -75,7 +75,7 @@ function fetchDatachange(data = {}) {
   return (dispatch, getState) => {
     // 验证从复提交
     dispatch(requestDatachange())
-    const url = `/huo/logs/datachanges`
+    const url = '/huo/logs/datachanges'
     AxiosAPI({
       method: 'GET',
       url: url,
@@ -101,7 +101,7 @@ function exportDatachange(data) {
 
     dispatch(requestExportDatachange())
     openNotificationWithIcon('success', '正在导出,请稍后')
-    const url = `/huo/logs/datachanges/export/batch`
+    const url = '/huo/logs/datachanges/export/batch'
     AxiosAPI({
       method: 'POST',
       url: url,
@@ -143,7 +143,7 @@ function sourceErr(data) {
 
 function datachangeSources() {
   return (dispatch, getState) => {
-    const url = `/huo/logs/logsource/4`
+    const url = '/huo/logs/logsource/4'
     AxiosAPI({
       method: 'GET',
       url: url,

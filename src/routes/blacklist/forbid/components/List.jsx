@@ -143,7 +143,7 @@ export default class List extends Component {
     // })
 
     Modal.confirm({
-      title: `解除封禁`,
+      title: '解除封禁',
       content: (
         <Fragment>
           <p><Icon type='question-circle' /> 您确定要解除封禁吗</p>

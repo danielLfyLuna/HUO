@@ -288,7 +288,7 @@ function fetchPersonMails(data = {}) {
   return (dispatch, getState) => {
 
     dispatch(requestPersonMails())
-    let url = `/huo/mails`
+    let url = '/huo/mails'
     AxiosAPI({
       method: 'GET',
       url: url,
@@ -314,7 +314,7 @@ function createPersonMail(data = {}) {
   return (dispatch, getState) => {
 
     dispatch(requestPersonMailCreate())
-    let url = `/huo/mails`
+    let url = '/huo/mails'
     openNotificationWithIcon('info', '请稍等', '在没有成功前请不要重复点击提交')
     AxiosAPI({
       method: 'POST',
@@ -399,7 +399,7 @@ function fetchAllianceMails(data) {
   return (dispatch, getState) => {
 
     dispatch(requestAllianceMails())
-    let url = `/huo/mails/allianceMails`
+    let url = '/huo/mails/allianceMails'
     AxiosAPI({
       method: 'GET',
       url: url,
@@ -425,7 +425,7 @@ function createAllianceMail(data) {
   return (dispatch, getState) => {
 
     dispatch(requestAllianceMailCreate())
-    let url = `/huo/mails/allianceMails`
+    let url = '/huo/mails/allianceMails'
     AxiosAPI({
       method: 'POST',
       url: url,
@@ -504,7 +504,7 @@ function fetchServerMails(data) {
   return (dispatch, getState) => {
 
     dispatch(requestServerMails())
-    let url = `/huo/mails/serverMails`
+    let url = '/huo/mails/serverMails'
     AxiosAPI({
       method: 'GET',
       url: url,
@@ -530,7 +530,7 @@ function createServerMail(data) {
   return (dispatch, getState) => {
 
     dispatch(requestServerMailCreate())
-    let url = `/huo/mails/serverMails`
+    let url = '/huo/mails/serverMails'
     AxiosAPI({
       method: 'POST',
       url: url,

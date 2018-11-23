@@ -117,7 +117,7 @@ function fetchGroups() {
   return (dispatch, getState) => {
 
     dispatch(requestGroups())
-    const url = `/huo/groups`
+    const url = '/huo/groups'
     AxiosApi({
       method: 'GET',
       url: url,
@@ -138,7 +138,7 @@ function createGroup(data) {
   return (dispatch, getState) => {
 
     dispatch(requestGroupCreate())
-    const url = `/huo/groups`
+    const url = '/huo/groups'
     AxiosApi({
       method: 'POST',
       url: url,
@@ -161,7 +161,7 @@ function updateGroup(data) {
   return (dispatch, getState) => {
 
     dispatch(requestGroupUpdate())
-    const url = `/huo/groups`
+    const url = '/huo/groups'
     AxiosApi({
       method: 'PUT',
       url: url,

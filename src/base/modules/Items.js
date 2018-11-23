@@ -82,7 +82,7 @@ export function itemsActionCreator(value = {}, type = 0) {
 export function fetchAllRewadItemList() {
   return (dispatch, getState) => {
     dispatch(requestItems())
-    let url = `/huo/products/0/items/alllist`
+    let url = '/huo/products/0/items/alllist'
     AxiosAPI({
       method: 'GET',
       url: url,

@@ -32,7 +32,7 @@ function keepChannels(data) {
 function fetchChannels() {
   return (dispatch, getState) => {
     dispatch(requestChannels())
-    let url = `/huo/channels`
+    let url = '/huo/channels'
     AxiosAPI({
       method: 'GET',
       url: url,

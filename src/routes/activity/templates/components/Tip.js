@@ -38,7 +38,7 @@ export default class List extends Component {
       }, {
         title: '原因',
         dataIndex: 'msg',
-        key: 'msg',
+        key: 'msg'
       }, {
         title: '是否成功',
         dataIndex: 'success',

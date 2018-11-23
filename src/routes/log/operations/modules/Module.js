@@ -74,7 +74,7 @@ function fetchLogOperations(data = {}) {
   return (dispatch, getState) => {
     // 验证从复提交
     dispatch(requestLogOperations())
-    const url = `/huo/logs/operations`
+    const url = '/huo/logs/operations'
     AxiosAPI({
       method: 'GET',
       url: url,
@@ -100,7 +100,7 @@ function exportLogOperations(data) {
 
     dispatch(requestExportLogOperations())
     openNotificationWithIcon('success', '正在导出,请稍后')
-    const url = `/huo/logs/operations/export/batch`
+    const url = '/huo/logs/operations/export/batch'
     AxiosAPI({
       method: 'POST',
       url: url,
@@ -137,7 +137,7 @@ function requestSourcesErr(data) {
 function operationSources() {
   return (dispatch, getState) => {
 
-    const url = `/huo/logs/logsource/3`
+    const url = '/huo/logs/logsource/3'
     AxiosAPI({
       method: 'GET',
       url: url,

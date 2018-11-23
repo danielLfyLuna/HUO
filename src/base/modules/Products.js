@@ -28,7 +28,7 @@ function receiveProductsMap(data) {
 function fetchProductsMap() {
   return (dispatch, getState) => {
     dispatch(requestProductsMap())
-    let url = `/huo/products/server/options`
+    let url = '/huo/products/server/options'
     AxiosAPI({
       method: 'GET',
       url: url,

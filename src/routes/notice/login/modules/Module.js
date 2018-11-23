@@ -127,7 +127,7 @@ function fetchLoginNotices(data = {}) {
   return (dispatch, getState) => {
 
     dispatch(requestNotices())
-    const url = `huo/products/loginnotices`
+    const url = 'huo/products/loginnotices'
     AxiosAPI({
       method: 'GET',
       url: url,
@@ -151,7 +151,7 @@ function fetchLoginNotice(data = {}) {
     const url = `huo/products/loginnotices/${data.path.noticeId}`
     AxiosAPI({
       method: 'GET',
-      url: url,
+      url: url
     }).then(response => {
       dispatch(receiveNotice(response))
     }).catch(error => {
@@ -169,7 +169,7 @@ function createLoginNotice(data) {
 
     openNotificationWithIcon('warning', '正在提交新公告，请勿重复点击发送！')
     dispatch(requestNoticeCreate())
-    const url = `huo/products/loginnotices`
+    const url = 'huo/products/loginnotices'
     AxiosAPI({
       method: 'POST',
       url: url,
@@ -203,7 +203,7 @@ function updateLoginNotice(data) {
     AxiosAPI({
       method: 'PUT',
       url: url,
-      data: data.form,
+      data: data.form
     }).then(response => {
       dispatch(receiveNoticeUpdate(response))
       openNotificationWithIcon('success', '更新成功')
@@ -270,7 +270,7 @@ function orderLoginNotice(data) {
   return (dispatch, getState) => {
 
     dispatch(requestNoticeOrders())
-    const url = `huo/products/loginnotices/orders`
+    const url = 'huo/products/loginnotices/orders'
     AxiosAPI({
       method: 'PUT',
       url: url,
@@ -448,7 +448,7 @@ const ACTION_HANDLERS = {
         orders: action.payload.data
       }
     })
-  },
+  }
 }
 
 // ------------------------------------
